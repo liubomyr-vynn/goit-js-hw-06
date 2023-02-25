@@ -1,24 +1,109 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
-  line-height: 1.5;
+	margin: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #fafafa;
+	color: #212121;
+	line-height: 1.5;
 }
 
 input {
-  padding: 8px;
-  font: inherit;
+	padding: 8px;
+	font: inherit;
 }
 
 button {
-  padding: 8px 12px;
-  cursor: pointer;
+	padding: 8px 12px;
+	cursor: pointer;
+
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 3px;
+	padding: 12px 24px;
+	border: 0;
+	color: #3a4149;
+	background: #e7ebee;
+	line-height: 1.15;
+	font-size: 16px;
+}
+
+button:hover {
+	transition: all 0.1s ease;
+	box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+
+#value {
+	font-weight: 600;
+	line-height: 1.15;
+	font-size: 16px;
+}
+
+a {
+	display: inline-block;
+	outline: none;
+	border-width: 0px;
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-size: inherit;
+	font-weight: 500;
+	max-width: 100%;
+	text-align: center;
+	text-decoration: none;
+	transition: background 0.1s ease-out 0s,
+		box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+	background: rgb(0, 82, 204);
+	cursor: pointer;
+	height: 24px;
+	line-height: 24px;
+	padding: 0px 12px;
+	vertical-align: middle;
+	width: auto;
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+}
+a:hover {
+	background: rgb(0, 101, 255);
+	text-decoration: inherit;
+	transition-duration: 0s, 0.15s;
+	color: rgb(255, 255, 255);
+}
+
+.gallery {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	list-style: none;
+}
+
+.gallery__item {
+	display: block;
+	width: 250px;
+	height: 200px;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: 1s ease;
+}
+
+img:hover {
+	transform: scale(1.2);
+	transition: 1s ease;
+}
+
+.boxes__item {
+	margin-top: 5px;
 }
