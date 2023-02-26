@@ -21,7 +21,10 @@ const createBoxes = amount => {
 	return;
 };
 
-const destroyBoxes = () => (boxesEl.innerHTML = "");
+const destroyBoxes = () => {
+	boxesEl.innerHTML = "";
+	inputEl.value = "";
+};
 
 const handleCreateButtonClick = () => createBoxes(inputEl.value);
 createBtnEl.addEventListener("click", handleCreateButtonClick);
